@@ -3,11 +3,11 @@
     padding: 0;
     box-sizing: border-box; 
     font-family: 'Poppins';
-    color:#333;
+    color:#DAE3E5;
 }
 
 body {
-    background: #241d1d;
+    background: #04080F;
     display: flex;
     
 }
@@ -17,9 +17,9 @@ body {
     flex-direction: column;
     max-width:860px;
     margin:auto;
-    background:#fff;
     width: 100%;
     padding:20px;
+    background: #507DBC;
 }
 
 header {
@@ -71,9 +71,10 @@ section{
 .hobbies h4 {
     margin-bottom:5px;
     padding-bottom:5px;
-    border-bottom:2px solid #333;
+    border-bottom:2px solid #DAE3E5;
     display: inline-block;
     text-align: center;
+    color: #DAE3E5;
 }
 
 .hobbies ul li ul {
@@ -88,7 +89,7 @@ section{
 .count-on-me h4 {
     margin-bottom:5px;
     padding-bottom:5px;
-    border-bottom:2px solid #333;
+    border-bottom:2px solid #DAE3E5;
     display: inline-block;
 }
 
@@ -99,7 +100,7 @@ section{
 .funny-story h4 {
     margin-bottom:5px;
     padding-bottom:5px;
-    border-bottom:2px solid #333;
+    border-bottom:2px solid #DAE3E5;
     display: inline-block;
 }
 
@@ -117,12 +118,13 @@ nav a {
 
 nav a:link, nav a:visited {
     text-decoration: none;
-    border-bottom:2px solid #333;
+    border-bottom:2px solid #DAE3E5;
+    transition: border-width 0.1s ease-in-out;
 }
 
 nav a:hover {
     text-decoration: none;
-    border-bottom:none;
+    border-bottom-width: 5px;
 }
 
 nav a:first-child {
@@ -131,4 +133,27 @@ nav a:first-child {
 
 nav a:last-child {
     margin-left:5px;
+}
+
+nav .name {
+    margin:0 5px;
+    text-transform: uppercase;
+}
+
+.prev-link, .next-link {
+    position:relative;
+}
+
+.prev-link::before {
+    content:'<<';
+    position: absolute;
+    left:-20px;
+    top:0px;
+}
+
+.next-link::before {
+    content:'>>';
+    position: absolute;
+    right:-20px;
+    top:0px;
 }

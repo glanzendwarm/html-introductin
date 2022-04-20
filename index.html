@@ -40,9 +40,12 @@
                 <div class="table__col">Pasta</div>
             </div>
             <div class="table__row">
-                <div class="table__col">Pineapple on pizza? Yes or no?</div>
+                <div class="table__col">Pineapple on pizza?</div>
                 <div class="table__col">
-                    <input type="checkbox" checked>
+                    <input type="radio" id="yes" name="pineapple" value="Yes" checked>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="pineapple" value="No">
+                    <label for="no">No</label>
                 </div>
             </div>
         </section>
@@ -72,17 +75,18 @@
 
         <section class="funny-story">
             <h4>A funny story about me</h4>
-            <p>In highschool we had to go to Italy as part of the curriculum. Wild cats we were, we tried to stick as many clothespins
-                on the clothing of our teachers/fellow students without them noticing them.
+            <p>In highschool we had to go to Italy as part of the curriculum. We tried to stick as many clothespins on the clothing
+                of our teachers/fellow students without them noticing them and then tried to photograph them in front of
+                famous Italian sculptures/paintings/buildings etc...
             </p>
             <h5>
                 <i class="fa-solid fa-arrow-trend-down"></i> TLDR; We put clothespins on the clothes of our teachers which made for a very funny sight.</h5>
         </section>
 
         <nav>
-            <a href="/">
-                << Previous</a> || JELLE VAN DE POEL ||
-                    <a href="/">Next >></a>
+            <a href="/" class="prev-link">Previous</a> ||
+            <span class="name">Jelle Van de Poel</span> ||
+            <a href="https://klarida.github.io/html-introduction/" class="next-link">Next</a>
         </nav>
 
     </div>
