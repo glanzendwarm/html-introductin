@@ -1,0 +1,134 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins';
+    color:#333;
+}
+
+body {
+    background: #241d1d;
+    display: flex;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width:860px;
+    margin:auto;
+    background:#fff;
+    width: 100%;
+    padding:20px;
+}
+
+header {
+    text-align: center;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    margin:20px auto;
+}
+
+section{
+    margin-bottom:40px;
+}
+
+.table {
+    max-width:400px;
+    width:100%;
+    border:1px solid #ccc;
+    margin:0 auto;
+}
+
+.table__row {
+    display: flex;
+}
+
+.table__row:not(:last-child){
+    border-bottom:1px solid #ccc;
+}
+
+.table__col {
+    padding:5px;
+    width:calc(50% - 0.5px);
+}
+
+.table__col:first-child {
+    border-right:1px solid #ccc;
+}
+
+.hobbies {
+    margin:40px auto;
+}
+
+.hobbies h4 {
+    margin-bottom:5px;
+    padding-bottom:5px;
+    border-bottom:2px solid #333;
+    display: inline-block;
+    text-align: center;
+}
+
+.hobbies ul li ul {
+    padding-left:10px;
+    font-size:14px;
+}
+
+.count-on-me {
+    text-align:center;
+}
+
+.count-on-me h4 {
+    margin-bottom:5px;
+    padding-bottom:5px;
+    border-bottom:2px solid #333;
+    display: inline-block;
+}
+
+.funny-story {
+    text-align:center;
+}
+
+.funny-story h4 {
+    margin-bottom:5px;
+    padding-bottom:5px;
+    border-bottom:2px solid #333;
+    display: inline-block;
+}
+
+.funny-story p {
+    margin-bottom:10px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    padding-bottom:5px;
+}
+
+nav a:link, nav a:visited {
+    text-decoration: none;
+    border-bottom:2px solid #333;
+}
+
+nav a:hover {
+    text-decoration: none;
+    border-bottom:none;
+}
+
+nav a:first-child {
+    margin-right:5px;
+}
+
+nav a:last-child {
+    margin-left:5px;
+}
